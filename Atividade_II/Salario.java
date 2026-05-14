@@ -16,7 +16,7 @@ public class Salario{
         inss = scan.nextFloat();
 
 
-        salario = (valorH * Num_aulas) - (inss/100);
+        salario = (valorH * Num_aulas) * (1 - (inss/100));
 
 
         System.out.print("salario = " + salario);
