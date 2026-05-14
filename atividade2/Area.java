@@ -8,11 +8,11 @@ public class Area{
         double area, r;
 
         System.out.print("digite o valor do raio");
-        r = scan.nextFloat();
+        r = scan.nextDouble();
 
         area = pi * (r * r);
 
-        System.out.printf("a area eh: %D", area);
+        System.out.printf("a area eh: %f", area);
 
         scan.close();
     }
