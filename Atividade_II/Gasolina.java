@@ -11,7 +11,7 @@ public class Gasolina{
 
 
         float quant_litros = km/12;
-        float custo = quant_litros*preco
+        float custo = quant_litros*preco;
 
         System.out.printf("km rodados: %f %ngasolina necessaria: %f%n custo: %f%n", km, quant_litros, custo);
 
