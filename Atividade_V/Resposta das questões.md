@@ -1,4 +1,4 @@
-**Atributo de instância vs. atributo estático**  
+**Qual a diferença entre atributo de instância e atributo estático?**  
 Atributos de instância são únicos para cada objeto criado a partir de uma classe, ou seja, cada instância possui sua própria cópia desses atributos. Já os atributos estáticos pertencem à classe em si e são compartilhados por todas as instâncias, existindo independentemente dos objetos. Enquanto o primeiro é acessado por meio de uma instância, o segundo é acessado diretamente pela classe. Além disso, atributos de instância ocupam memória para cada objeto, enquanto atributos estáticos ocupam memória apenas uma vez, na área de métodos da classe.
 
 **Por que utilizamos atributos private?**  
