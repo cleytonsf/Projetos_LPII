@@ -1,16 +1,19 @@
 public class Produto{
+
     private String nome;
     private double preco;
     private int quant_estoque;
 
-    public static int quant_produto = 0;
+    private static int quant_produto = 0;
+
 
     public Produto(String nome, double preco, int quantidade){
         setNome(nome);
         setPreco(preco);
-        setQuantidadeEstoque(quantidade);
-        quant_produto = ++quant_produto;
+        setQuantEstoque(quantidade);
+        quant_produto++;
     }
+
 
     public void setNome(String nome){
         this.nome = nome;
@@ -20,11 +23,12 @@ public class Produto{
         return nome;
     }
 
+
     public void setPreco(double preco){
         if(preco >= 0){
             this.preco = preco;
         }else{
-
+            System.out.printf("Erro no produto %s: %.2f (O preço não pode ser negativo).%n", this.nome, preco);
         }
     }
 
@@ -32,24 +36,25 @@ public class Produto{
         return preco;
     }
 
-    public void setQuantidadeEstoque(int quantidade){
+
+    public void setQuantEstoque(int quantidade){
         if(quantidade >= 0){
             this.quant_estoque = quantidade;
         }else{
-
+            System.out.printf("Erro no produto %s: %d (A quantidade em estoque não pode ser negativa.%n", this.nome, quantidade);
         }
     }
 
-    public int getQuantidadeEstoque(){
+    public int getQuantEstoque(){
         return quant_estoque;
     }
 
     public double calcularValorEstoque(){
-       double valorestoque = preco * quant_estoque;
+       double valorestoque = this.preco * this.quant_estoque;
        return valorestoque;
     }
 
-    public static int quantidadeProduto(){
+    public static int getQuantProdutoTotal(){
         return quant_produto;
     }
 }

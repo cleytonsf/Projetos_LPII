@@ -16,7 +16,7 @@ public class Carro{
     }
 
     public void desligar(){
-        System.out.println("deslingando");
+        System.out.println("desligando");
     }
 
     public void acelerar(){
@@ -28,19 +28,25 @@ public class Carro{
     }
 
     public void virarDireita(){
-        System.out.println("virando pra direita");
+        System.out.println("Virando para a direita..");
     }
 
     public void virarEsquerda(){
-        System.out.println("virando pra esquerda");
+        System.out.println("Virando para a esquerda..");
     }
 
     public void passarMarcha(){
-        this.marcha++;
+        if (this.marcha < 6) {
+            this.marcha++;
+            System.out.println("Marcha passada para: " + this.marcha);
+        }
     }
 
-    public void reduzirMacha(){
-        this.marcha--;
+    public void reduzirMarcha(){
+        if(this.marcha > 1){
+            this.marcha--;
+            System.out.println("Marcha reduzida para: " + this.marcha);
+        }
     }
 
 }
