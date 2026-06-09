@@ -1,9 +1,10 @@
 public class Paciente extends Pessoa {
     private Prontuario prontuario;
 
-    public Paciente(String id, String nome, String cpf, String telefone, String email, Prontuario prontuario) {
+    public Paciente(String id, String nome, String cpf, String telefone, String email) {
         super(id, nome, cpf, telefone, email);
-        this.prontuario = prontuario;
+        this.prontuario = new Prontuario("99", "Dor no peito", "O+", "Dipirona", "300mg", "Nenhum");
+
     }
 
     public Prontuario getProntuario() {

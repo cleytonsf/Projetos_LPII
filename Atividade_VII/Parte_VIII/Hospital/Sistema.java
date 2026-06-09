@@ -5,8 +5,7 @@ public class Sistema {
         System.out.println("         SISTEMA DE GESTÃO HOSPITALAR");
         System.out.println("-------------------------------------------------\n");
 
-        Prontuario prontuario = new Prontuario("99", "Dor no peito", "O+", "Dipirona", "300mg", "Nenhum");
-        Paciente paciente = new Paciente("P01", "Pedro Silva", "444.555.666-77", "(75) 98877-0000", "pedro@email.com", prontuario);
+        Paciente paciente = new Paciente("P01", "Pedro Silva", "444.555.666-77", "(75) 98877-0000", "pedro@email.com");
         Medico medico = new Medico("M01", "Dr. Carlos Oliveira", "123.456.789-00", "(75) 99999-1111", "carlos@hospital.com", "123456", "Cardiologia");
         Enfermeiro enfermeiro = new Enfermeiro("E01", "Ana Costa", "987.654.321-11", "(75) 98888-4535", "ana@hospital.com", "555555", "Pronto Socorro");
 
